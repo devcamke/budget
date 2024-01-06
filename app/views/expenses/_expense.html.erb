@@ -1,27 +1,8 @@
-<div id="<%= dom_id expense %>">
-  <p class="my-5">
-    <strong class="block font-medium mb-1">Name:</strong>
-    <%= expense.name %>
-  </p>
-
-  <p class="my-5">
-    <strong class="block font-medium mb-1">Date:</strong>
-    <%= expense.date %>
-  </p>
-
-  <p class="my-5">
-    <strong class="block font-medium mb-1">Amount:</strong>
-    <%= expense.amount %>
-  </p>
-
-  <p class="my-5">
-    <strong class="block font-medium mb-1">Description:</strong>
-    <%= expense.description %>
-  </p>
-
-  <% if action_name != "show" %>
-    <%= link_to "Show this expense", expense, class: "rounded-lg py-3 px-5 bg-gray-100 inline-block font-medium" %>
-    <%= link_to "Edit this expense", edit_expense_path(expense), class: "rounded-lg py-3 ml-2 px-5 bg-gray-100 inline-block font-medium" %>
-    <hr class="mt-6">
-  <% end %>
-</div>
+<tr id="<%= dom_id expense %>">
+      <td class="whitespace-nowrap px-4 py-2 font-medium text-gray-900"><%= expense.name %></td>
+      <td class="whitespace-nowrap px-4 py-2 text-gray-700"><%= expense.date %></td>
+      <td class="whitespace-nowrap px-4 py-2 text-gray-700"><%= expense.amount %></td>
+      <td class="whitespace-nowrap px-4 py-2 text-gray-700 py-3"><%= expense.description %></td>
+      <td><%= link_to "Edit", edit_expense_path(expense), class: "rounded-lg py-3 px-5 bg-blue-600 text-white block font-medium" %></td>
+      <td><%= link_to "View", expense, class: "ml-2 rounded-lg py-3 px-5 bg-gray-100 inline-block font-medium" %></td>
+</tr>
