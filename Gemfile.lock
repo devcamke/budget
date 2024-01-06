@@ -258,14 +258,15 @@ PLATFORMS
   x86_64-linux
 
 DEPENDENCIES
+  actiontext (~> 7.1, >= 7.1.2)
   bootsnap
   debug
   importmap-rails
   jbuilder
   pg (~> 1.1)
-  puma (>= 5.0)
+  puma (~> 6.4, >= 6.4.1)
   rails (~> 7.1.2)
-  rspec-rails
+  rspec-rails (~> 6.1)
   sprockets-rails
   stimulus-rails
   tailwindcss-rails
