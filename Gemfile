@@ -4,6 +4,7 @@ ruby "3.3.0"
 
 gem 'actiontext', '~> 7.1', '>= 7.1.2'
 gem "bootsnap", require: false
+gem 'faker'
 gem "importmap-rails"
 gem "jbuilder"
 gem "pg", "~> 1.1"

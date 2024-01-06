@@ -7,3 +7,15 @@
 #   ["Action", "Comedy", "Drama", "Horror"].each do |genre_name|
 #     MovieGenre.find_or_create_by!(name: genre_name)
 #   end
+require 'faker'
+
+10.times do
+  Expense.create(
+    name: Faker::Name.name,
+    date: Faker::Date.between(from: '2022-01-01', to: '2022-12-31'),
+    amount: Faker::Number.between(from: 100, to: 1000),
+    description: Faker::Lorem.sentence
+  )
+end
+
+
