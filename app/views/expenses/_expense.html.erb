@@ -5,5 +5,5 @@
       <td class="whitespace-nowrap px-4 py-2 text-gray-700 py-3"><%= expense.description %></td>
       <td><%= link_to "Edit", edit_expense_path(expense), class: "rounded-md  text-gray-500  block font-medium text-base" %></td>
       <td><%= link_to "View", expense, class: "ml-2 rounded-md   inline-block font-medium text-base" %></td>
-      <td><%= button_to "Delete", expense, method: :delete, class: "rounded-md   inline-block font-medium text-base text-red-500" %></td>
+      <td><%= button_to "Delete", expense, data: { turbo_method: :delete, turbo_confirm: "Are you sure?" }, class: "rounded-md   inline-block font-medium text-base text-red-500" %></td>
 </tr>
