@@ -3,8 +3,10 @@ source "https://rubygems.org"
 ruby "3.3.0"
 
 gem 'actiontext', '~> 7.1', '>= 7.1.2'
-gem "bootsnap", require: false
 gem 'faker'
+gem "bootsnap", require: false
+
+gem "dockerfile-rails", ">= 1.6", :group => :development
 gem "importmap-rails"
 gem "jbuilder"
 gem "pg", "~> 1.1"
@@ -30,5 +32,3 @@ group :development do
   # Use console on exceptions pages [https://github.com/rails/web-console]
   gem "web-console"
 end
-
-gem "devise", "~> 4.9"
