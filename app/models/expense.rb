@@ -11,4 +11,5 @@ class Expense < ApplicationRecord
   def self.categories
     CATEGORIES
   end
+
 end

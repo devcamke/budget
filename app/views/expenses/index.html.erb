@@ -19,12 +19,19 @@
           <th class="whitespace-nowrap px-4 py-2 font-medium text-left">Edit</th>
           <th class="whitespace-nowrap px-4 py-2 font-medium text-left
           ">Delete</th>
-        </tr>
+
       </thead>
       <tbody class="divide-y divide-gray-200 mx-8">
         <%= render @expenses %>
       </tbody>
     </table>
+    <tfoot>
+     <tr>
+      <td colspan="2"></td>
+      <td><strong>Total Expenses: <%= number_with_precision(@total_expenses, precision: 2) %></strong></td>
+      <td colspan="3"></td>
+      </tr>
+    </tfoot>
   </div>
 
   <div class="flex flex-col sm:flex-row justify-between items-center mt-4">
