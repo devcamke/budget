@@ -11,7 +11,7 @@ gem "importmap-rails"
 gem "jbuilder"
 gem "pg", "~> 1.1"
 gem 'puma', '~> 6.4', '>= 6.4.1'
-gem "rails", "~> 7.1.2"
+gem 'rails', '~> 7.1', '>= 7.1.3'
 gem "sprockets-rails"
 gem "stimulus-rails"
 gem "tailwindcss-rails"
